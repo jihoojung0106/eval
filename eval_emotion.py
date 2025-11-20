@@ -159,5 +159,17 @@ if 'mer2024_caption' in args.dataset:
     cm = confusion_matrix(targets_list, answers_list)
     print(cm)
 
+
+# Accuracy: 0.9016786570743405
+# Precision: 0.8998697764961995
+# Recall: 0.9016786570743405
+# F1 Score: 0.8999288544283519
+# [[178   1   2   2   0   0]
+#  [  2 151   8   4   3   1]
+#  [ 10  11 133   6   2   4]
+#  [  2   2   1 250   0   2]
+#  [  1   0   3   1   6   3]
+#  [  4   1   3   2   1  34]]
+
 # torchrun  --nproc_per_node 1 eval_emotion.py --cfg-path eval_configs/eval_emotion.yaml --dataset feature_face_caption
 # torchrun  --nproc_per_node 1 eval_emotion.py --cfg-path eval_configs/eval_emotion.yaml --dataset mer2024_caption
