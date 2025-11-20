@@ -1,0 +1,115 @@
+# ===============================
+# Python / Deep Learning .gitignore
+# ===============================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.pkl
+*.pickle
+*.pt
+*.pth
+
+# Virtual environment
+env/
+venv/
+.venv/
+*/env/
+*/venv/
+*/.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Byte-compiled / cache
+*.cache/
+*.pytest_cache/
+*.mypy_cache/
+
+# --- CUDA / Torch artifacts ---
+*.cu.o
+*.cu.d
+*.nvprof
+
+# --- Logs ---
+*.log
+logs/
+wandb/
+tensorboard/
+tb_logs/
+lightning_logs/
+output/
+outputs/
+
+# --- Experiments ---
+checkpoints/
+ckpt/
+*.ckpt
+runs/
+experiments/
+results/
+
+# --- Data ---
+data/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+*.h5
+*.npy
+*.npz
+*.csv
+*.tsv
+
+# Don't ignore small config CSV/JSON
+!config/*.csv
+!config/*.json
+
+# --- Model weights ---
+weights/
+*.onnx
+*.bin
+
+# --- Images/Videos (raw data) ---
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.webp
+*.mp4
+*.avi
+*.mov
+
+# --- VSCode ---
+.vscode/
+.history
+
+# --- Mac/Windows ---
+.DS_Store
+Thumbs.db
+
+# --- Build ---
+build/
+dist/
+*.egg-info/
+
+# --- HuggingFace cache ---
+~/.cache/huggingface/
+.huggingface/
+transformers_cache/
+datasets_cache/
+
+# --- Temporary files ---
+tmp/
+temp/
+*.tmp
+*.swp
+
+# --- Colab ---
+/content/
+
+# --- PyTorch Lightning ---
+lightning_logs/
